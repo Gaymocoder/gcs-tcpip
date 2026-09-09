@@ -1,0 +1,33 @@
+# Ignore object files, libs and executable files
+*.o
+*.dll
+*.so
+*.exe
+*.sh
+*.pyc
+
+# Ignore bin, build and 3rdparty directories
+bin/
+build/
+
+# Ignore configured conan and CMake presets
+conan/
+CMakePresets.json
+CMakeUserPresets.json
+.gcst/.default
+.gcst/.temp
+
+# Ignore my own .md
+*.md
+!*README.md
+
+# Don't ignore build-scripts
+!build.sh
+!.github/workflows/scripts/**
+
+# Вывод прогона стека (эталонный вход data/sample.pcap остаётся)
+data/replies.pcap
+
+# Секреты: рядом с проектом, но никогда в репозиторий
+cookies
+*.cookies
